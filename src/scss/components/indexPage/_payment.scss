@@ -1,0 +1,21 @@
+.payment {
+  padding-top: 10rem;
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-column-gap: 8.5rem;
+    grid-template-columns: 43% 48%;
+
+    @media (max-width: em(992)) {
+      display: block;
+    }
+  }
+
+  &__subtitle {
+    padding-top: 4rem;
+  }
+}

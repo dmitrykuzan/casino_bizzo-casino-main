@@ -1,0 +1,116 @@
+.online {
+  padding-top: 15rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__title-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+
+    @media (max-width: em(576)) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    padding-right: 1rem;
+    padding-bottom: 0;
+
+    @media (max-width: em(576)) {
+      padding-bottom: 0.8rem;
+    }
+  }
+
+  &__link {
+    align-self: end;
+    @media (max-width: em(576)) {
+      align-self: initial;
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 5rem;
+
+    @media (max-width: em(576)) {
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: em(1200)) {
+      grid-row-gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: em(576)) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 14rem;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 10rem;
+      height: 10rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media (max-width: em(576)) {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+
+    @media (max-width: em(1200)) {
+      max-width: 48rem;
+    }
+
+    @media (max-width: em(576)) {
+      padding-top: 10rem;
+    }
+  }
+
+  &__item--1::after {
+    background-image: url(../img/online/online-1.svg);
+  }
+
+  &__item--2::after {
+    background-image: url(../img/online/online-2.svg);
+  }
+
+  &__item--3::after {
+    background-image: url(../img/online/online-3.svg);
+  }
+
+  &__item--4::after {
+    background-image: url(../img/online/online-4.svg);
+  }
+
+  &__item-title {
+    padding-bottom: 1.3rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    font-size: fluid-font(2.4rem, 1.8rem);
+  }
+
+  &__item-subtitle {
+    line-height: 140%;
+  }
+}

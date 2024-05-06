@@ -1,0 +1,47 @@
+.founds {
+  padding-top: 14rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__text-wrap {
+    padding-bottom: 3.4rem;
+  }
+
+  &__text-wrap p:not(:last-child) {
+    padding-bottom: 1.5rem;
+  }
+
+  &__items {
+    display: grid;
+    align-items: flex-end;
+    grid-gap: 7.7rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: em(1200)) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem 2rem;
+    }
+
+    @media (max-width: em(576)) {
+      display: block;
+    }
+  }
+
+  &__item {
+    @media (max-width: em(1200)) {
+      text-align: center;
+    }
+
+    @media (max-width: em(576)) {
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

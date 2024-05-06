@@ -1,0 +1,35 @@
+.vip {
+  padding-top: 12rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__text-wrap {
+    max-width: 57rem;
+
+    @media (max-width: em(992)) {
+      max-width: initial;
+    }
+  }
+
+  &__table-title {
+    font-size: fluid-font(2.4rem, 1.8rem);
+  }
+
+  &__table {
+    margin-top: 6rem;
+
+    @media (max-width: em(992)) {
+      margin-top: 3rem;
+    }
+
+    @media (max-width: em(576)) {
+      margin-top: 3rem;
+    }
+  }
+}

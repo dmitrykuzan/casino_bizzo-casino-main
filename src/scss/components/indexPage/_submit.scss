@@ -1,0 +1,11 @@
+.submit {
+  padding-top: 14rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+}

@@ -1,0 +1,95 @@
+.play {
+  padding-top: 15rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+  &__title {
+
+  }
+
+  &__subtitle {
+    padding-bottom: 3.7rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    padding-right: 1rem;
+
+    li:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 6rem;
+    font-size: fluid-font(1.8rem, 1.6rem);
+  }
+
+  &__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+
+  &__item--1::before {
+    background-image: url(../img/play/play-1.svg);
+  }
+
+  &__item--2::before {
+    background-image: url(../img/play/play-2.svg);
+  }
+
+  &__item--3::before {
+    background-image: url(../img/play/play-3.svg);
+  }
+
+  &__item--4::before {
+    background-image: url(../img/play/play-4.svg);
+  }
+
+  &__item--5::before {
+    background-image: url(../img/play/play-5.svg);
+  }
+
+  &__img {
+    flex-shrink: 0;
+    margin-right: 9rem;
+    max-width: 26.6rem;
+    max-height: 28.8rem;
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+
+  &__title-how {
+    padding-top: 8rem;
+    padding-bottom: 2.4rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+
+    @media (max-width: em(576)) {
+      padding-top: 4rem;
+    }
+  }
+
+  &__how-subtitle p:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}

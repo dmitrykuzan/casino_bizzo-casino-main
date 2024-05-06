@@ -1,0 +1,21 @@
+.main {
+  padding-top: 6.3rem;
+
+  &__title {
+    padding-bottom: 2.5rem;
+    font-weight: 600;
+    font-size: 4.8rem;
+  }
+
+  &__text {
+    padding-bottom: 5rem;
+  }
+
+  &__text p:not(:last-child) {
+    padding-bottom: 1.5rem;
+  }
+
+  &__button {
+
+  }
+}

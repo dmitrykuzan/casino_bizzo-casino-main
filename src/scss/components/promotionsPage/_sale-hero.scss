@@ -1,0 +1,23 @@
+.sale__hero {
+  &-title {
+    font-size: fluid-font(4.8rem, 2.8rem);
+    line-height: 115%;
+  }
+
+  &-subtitle {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+  }
+
+  &-img {
+    position: initial;
+    flex-shrink: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+}

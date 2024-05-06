@@ -1,0 +1,73 @@
+.jackpot {
+  padding-top: 14rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__subtitle {
+    padding-bottom: 10rem;
+
+    @media (max-width: em(992)) {
+      padding-bottom: 5rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin-right: 2rem;
+    max-width: 57rem;
+
+    @media (max-width: em(992)) {
+      margin-right: initial;
+      max-width: initial;
+    }
+  }
+
+  &__content-subtitle {
+    padding-bottom: 4.5rem;
+  }
+
+  &__item {
+    grid-template-columns: 22% 33% 36%;
+    line-height: 140%;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 0;
+    flex-shrink: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        69.14deg,
+        #19061f 5.79%,
+        #550b6d 98.56%
+      );
+      filter: blur(150px);
+      transform: translate(-50%, -50%);
+    }
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+}

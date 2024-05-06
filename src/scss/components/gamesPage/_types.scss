@@ -1,0 +1,23 @@
+.types {
+  padding-top: 15rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__text {
+    padding-left: 2.5rem;
+
+    @media (max-width: em(576)) {
+      padding-left: 0;
+    }
+  }
+
+  &__text p:not(:last-child) {
+    padding-bottom: 1.5rem;
+  }
+}

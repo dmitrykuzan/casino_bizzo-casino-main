@@ -1,0 +1,75 @@
+.hero {
+  &__wrapper {
+    position: relative;
+    display: flex;
+
+    @media(max-width: em(992)) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text {
+    margin-right: 2rem;
+    padding-top: 5rem;
+    max-width: 60rem;
+
+    @media (max-width: em(1460)) {
+      max-width: 48rem;
+    }
+
+    @media (max-width: em(992)) {
+      margin-right: 0;
+      max-width: 100% !important;
+    }
+  }
+
+  &__title {
+    padding-bottom: 3.2rem;
+    font-weight: 700;
+    font-size: fluid-font(6rem, 4rem);
+    line-height: 100%;
+
+    span {
+      -webkit-text-stroke: 1px #fff;
+      color: transparent;
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 1.6rem;
+    font-weight: 600;
+    font-size: fluid-font(2.4rem, 2rem);
+  }
+
+  &__text-wrap {
+    p {
+      line-height: 150%;
+      letter-spacing: -0.01em;
+    }
+
+    p:not(:last-child) {
+      padding-bottom: 1.2rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 5.5rem;
+
+    @media (max-width: em(576)) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: -14rem;
+
+    @media (max-width: em(1460)) {
+      position: initial;
+    }
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+}

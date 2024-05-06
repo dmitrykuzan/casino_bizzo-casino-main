@@ -1,0 +1,19 @@
+.final {
+  padding-top: 16.5rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__btn {
+    margin-top: 4.8rem;
+
+    @media (max-width: em(576)) {
+      margin-top: 3rem;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.condition {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+
+  @media (max-width: em(992)) {
+    padding-bottom: 4rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__img {
+    max-width: 56.2rem;
+    max-height: 63.3rem;
+    flex-shrink: 0;
+
+    @media (max-width: em(1200)) {
+      flex-shrink: initial;
+    }
+
+    @media (max-width: em(992)) {
+      display: none;
+    }
+  }
+
+  &__text-wrap {
+    max-width: 68.3rem;
+  }
+
+  &__descr {
+    padding-top: 4rem;
+    line-height: 150%;
+
+    @media (max-width: em(576)) {
+      padding-top: 2rem;
+    }
+  }
+}

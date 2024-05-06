@@ -1,0 +1,95 @@
+.crypto {
+  padding-top: 14rem;
+  padding-bottom: 5rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__subtitle {
+    padding-bottom: 4.6rem;
+
+    @media (max-width: em(576)) {
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 4rem;
+
+    @media (max-width: em(1200)) {
+      grid-gap: 3rem;
+    }
+
+    @media (max-width: em(576)) {
+      display: block;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 13.3rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 10rem;
+      height: 10rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: em(576)) {
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 11.3rem;
+      max-width: 30rem;
+      text-align: center;
+
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  &__item--1::after {
+    background-image: url(../img/pay/crypto/crypto-1.svg);
+  }
+
+  &__item--2::after {
+    background-image: url(../img/pay/crypto/crypto-2.svg);
+  }
+
+  &__item--3::after {
+    background-image: url(../img/pay/crypto/crypto-3.svg);
+  }
+
+  &__item-title {
+    padding-bottom: 1.4rem;
+  }
+
+  &__item-subtitle {
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+
+  &__descr {
+    font-size: fluid-font(1.6rem, 1.4rem);
+  }
+}

@@ -1,0 +1,126 @@
+.reward {
+  padding-top: 13.4rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 8rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__subtitle {
+    padding-bottom: 4rem;
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(6, 1fr);
+
+    @media (max-width: em(1200)) {
+      grid-gap: 1.5rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: em(768)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: em(576)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: em(370)) {
+      display: block;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 1.2rem;
+    padding: 2.5rem 2.2rem;
+    min-height: 17.2rem;
+    background-color: var(--clr-primary-600);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-image: url(../img/program/reward/mask.svg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+
+    @media (max-width: em(1200)) {
+      min-height: auto;
+    }
+
+    @media (max-width: em(992)) {
+      padding: 1.5rem;
+    }
+
+    @media (max-width: em(370)) {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__item-title {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: fluid-font(2.1rem, 1.8rem);
+    color: #fff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -0.4rem;
+      top: 50%;
+      z-index: -1;
+      border-radius: 0.3rem;
+      width: calc(100% + 0.8rem);
+      height: 0.6rem;
+      background-image: linear-gradient(
+        260.45deg,
+        #620f7d 17.28%,
+        #8f16b7 82.35%
+      );
+      transform: translateY(-50%);
+    }
+  }
+
+  &__list {
+    color: #fff;
+  }
+
+  &__list li {
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      border-radius: 50%;
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: #8f16b7;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__list li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

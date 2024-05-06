@@ -1,0 +1,18 @@
+.three {
+  padding-top: 15rem;
+
+  @media (max-width: em(992)) {
+    padding-top: 10rem;
+  }
+
+  @media (max-width: em(576)) {
+    padding-top: 5rem;
+  }
+
+  &__subtitle {
+    padding-bottom: 3.2rem;
+  }
+  &__wrapper {
+
+  }
+}
